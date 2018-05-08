@@ -1,88 +1,85 @@
-body { 
-background: url("https://www.dropbox.com/s/4tjppcuqzsculsv/clearSky.jpg?raw=1") no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+body {
+    background: url('https://www.dropbox.com/s/4tjppcuqzsculsv/clearSky.jpg?raw=1')
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container {
-	max-width: 70%;
+    max-width: 70%;
 }
 
 .jumbotron {
-	background-color:  rgba(2, 2, 2, 0.6);
-	color: #ffffff;
-	margin-top: 1.5vw;
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-		}
+    background-color: rgba(2, 2, 2, 0.7);
+    color: #ffffff;
+    margin-top: 1.5vw;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
 
 .btn {
-	background-color: rgba(3, 3, 3, 0.3);
-	outline: none;
-	border: none;
-	font-size: .7em;
+    background-color: rgba(3, 3, 3, 0.3);
+    outline: none;
+    border: none;
+    font-size: 0.7em;
 }
 a.btn {
-	font-size: .7em;
-	color: white;
+    font-size: 0.7em;
+    color: white;
 }
 
 h1 {
-	font-style: italic
+    font-style: italic;
 }
 
 #displayResults {
-	font-size: 2em;
-	font-weight: 900;
+    font-size: 2em;
+    font-weight: 900;
 }
- #cityNameSearch {
- 	color: black;
- 	width: 60%;
- }
-
+#cityNameSearch {
+    color: black;
+    width: 60%;
+}
 
 #searchResults {
-	list-style: none;
-	line-height: 150%;
-	display: table;
-	margin: 0 auto;
-	background-color: #f6f6f6;
-	width: 60%;
+    list-style: none;
+    line-height: 150%;
+    display: table;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    width: 60%;
 }
 
 label {
-	font-size: 1.6em;
-	font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 500;
 }
-
 
 a {
-	color: black;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 70%;
-	text-decoration: none;
-	display: block;
-	margin-top: -1px;
-	color: black;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70%;
+    text-decoration: none;
+    display: block;
+    margin-top: -1px;
+    color: black;
 }
 a:hover {
-  background-color: #BDBDBD;
+    background-color: #bdbdbd;
 }
 
 .ui-widget {
-	padding-top: 2vw;
+    padding-top: 2vw;
 }
 
 #name {
-	padding-top: 10vw;
-	font-size: 80%;
-	line-height: 300%;
+    padding-top: 6vw;
+    font-size: 80%;
+    line-height: 300%;
 }
 
 img {
-	max-width: 20%;
+    max-width: 10%;
 }
-
-
