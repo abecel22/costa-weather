@@ -59,7 +59,7 @@ function init() {
                         parsed_json.current_observation.relative_humidity;
                     weatherText = parsed_json.current_observation.weather;
                     $('#dispCity').text(locationName);
-                    $('#dispTemp').text('Temp: ' + tempF + '° F');
+                    $('#dispTemp').text(tempF + '°');
                     $('#dispHumi').text('Humidity: ' + humidity);
                     $('#dispWeatherText').text(
                         'Current Condition: ' + weatherText
@@ -74,13 +74,15 @@ function init() {
         //change to metric and back
         function changeToMetric() {
             $('#metric').click(function() {
-                var temp = $('#dispTemp').html();
-                var unit = temp.slice(-1);
-                //console.log(unit);
-                if (unit === 'F') {
-                    $('#dispTemp').text('Temp: ' + tempC + '° C');
+                var temp = $('#metric').text();
+                var unit = temp;
+                console.log(unit);
+                if (unit === 'F/c') {
+                    $('#dispTemp').text(tempC + '°');
+                    $('#metric').text('C/f');
                 } else {
-                    $('#dispTemp').text('Temp: ' + tempF + '° F');
+                    $('#dispTemp').text(tempF + '°');
+                    $('#metric').text('F/c');
                 }
             });
         }
