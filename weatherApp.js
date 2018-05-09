@@ -3,9 +3,9 @@ var longitude;
 var coordinates;
 var weatherText;
 
-window.onload = function() {
-    geoFindMe();
-};
+// window.onload = function() {
+//     geoFindMe();
+// };
 
 //geoFindme is check for coordinates
 function geoFindMe() {
@@ -60,10 +60,8 @@ function init() {
                     weatherText = parsed_json.current_observation.weather;
                     $('#dispCity').text(locationName);
                     $('#dispTemp').text(tempF + '°');
-                    $('#dispHumi').text('Humidity: ' + humidity);
-                    $('#dispWeatherText').text(
-                        'Current Condition: ' + weatherText
-                    );
+                    $('#dispHumi').text('Humidity ' + humidity);
+                    $('#dispWeatherText').text(weatherText);
                     changeImage();
                 }
             });
@@ -74,15 +72,14 @@ function init() {
         //change to metric and back
         function changeToMetric() {
             $('#metric').click(function() {
-                var temp = $('#metric').text();
-                var unit = temp;
+                var unit = $('#metric').text();
                 console.log(unit);
-                if (unit === 'F/c') {
+                if (unit !== 'Convert to Celcius') {
                     $('#dispTemp').text(tempC + '°');
-                    $('#metric').text('C/f');
+                    $('#metric').text('Convert to Celcius');
                 } else {
                     $('#dispTemp').text(tempF + '°');
-                    $('#metric').text('F/c');
+                    $('#metric').text('Convert to Farenheit');
                 }
             });
         }

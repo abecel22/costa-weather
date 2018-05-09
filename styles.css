@@ -19,15 +19,11 @@ body {
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.btn {
-    background-color: rgba(3, 3, 3, 0.3);
+#metric {
+    background: rgba(2, 2, 2, 0.2);
     outline: none;
-    border: none;
-}
-a.btn {
-    font-size: 0.8em;
-    color: white;
-    margin: 0 auto;
+    border: 1px solid white;
+    margin-top: 3vw;
 }
 
 h1 {
@@ -46,33 +42,37 @@ h1 {
     width: 60%;
     outline: none;
     border: none;
+    font-size: 1.5em;
 }
 
 .searchResults {
     list-style: none;
-    line-height: 150%;
+    line-height: 1;
     display: table;
     margin: 0 auto;
-    background-color: #f6f6f6;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 60%;
+    padding: 5px 1px;
+    border: none;
 }
 
-label {
-    font-size: 1.6em;
-    font-weight: 500;
+p {
+    padding: 0;
 }
 
 a {
-    color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 0.5em;
+    font-size: 0.9em;
     text-decoration: none;
     display: block;
-    margin-top: -1px;
+    height: 100%;
+    margin-top: 5px;
     color: black;
+    padding: 5px 1px;
 }
 a:hover {
-    background-color: #bdbdbd;
+    background-color: rgb(228, 232, 236);
+    text-decoration: none;
 }
 
 .ui-widget {
@@ -81,14 +81,8 @@ a:hover {
 }
 
 .name {
-    padding-top: 6vw;
-    font-size: 80%;
-    line-height: 300%;
+    font-size: 0.5em;
     text-align: center;
-}
-
-img {
-    max-width: 10%;
 }
 
 /* display results  */
@@ -100,11 +94,13 @@ img {
     -webkit-align-items: center;
     align-items: center;
 }
+.flexed {
+}
 
 .flexed2 {
     display: flex;
     flex-direction: column;
-    padding: 2px;
+    padding: 0;
 }
 
 .dispCity {

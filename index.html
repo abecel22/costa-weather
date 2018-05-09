@@ -23,7 +23,7 @@
 
         <div class="flexContainer">
           <div class="flexed">
-            <span id="dispTemp" class="dispTemp">84</span>
+            <span id="dispTemp" class="dispTemp">84°</span>
           </div>
           <div class="flexed2">
             <span id="dispHumi" class="dispHumi">Humidity 86%</span>
@@ -31,19 +31,26 @@
           </div>
         </div>
       </div>
-
-      <a id="metric" class="btn btn-primary btn-md" href="#" role="button">F/c</a>
-
+      <div class="text-center">
+        <button id="metric" type="button" class="btn btn-primary">Convert to Celsius</button>
+      </div>
       <div class="ui-widget">
-        <label for="tags">Search City</label>
-        <br>
-        <input type="text" id="cityNameSearch" class="cityNameSearch" />
+        <input type="text" id="cityNameSearch" class="cityNameSearch" placeholder="Search for a new city" />
       </div>
       <div id="searchResults" class="searchResults">
+        <div>
+          <p>
+            <a href="#newCity" data-q_id="000AU.1.99999">Australia</a>
+          </p>
+          <p>
+            <a href="#newCity" data-q_id="000AU.1.99999">Australia</a>
+          </p>
+          <p>
+            <a href="#newCity" data-q_id="000AU.1.99999">Australia</a>
+          </p>
+        </div>
       </div>
-      <div class="name">
-        <img src="https://www.dropbox.com/s/ludmi1gtqj3mcs4/wundergroundLogo_4c_rev-compressor.png?raw=1">
-        <br> by abel acosta</div>
+
     </div>
 
   </div>
