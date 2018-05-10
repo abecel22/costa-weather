@@ -12,11 +12,12 @@ body {
 }
 
 .jumbotron {
-    background-color: rgba(2, 2, 2, 0.7);
+    background-color: rgba(2, 2, 2, 0.6);
     color: #ffffff;
     margin-top: 1.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 450px;
 }
 
 #metric {
@@ -24,6 +25,11 @@ body {
     outline: none;
     border: 1px solid white;
     margin-top: 3vw;
+    font-size: 0.7em;
+}
+
+#metric:hover {
+    background: rgba(220, 220, 220, 0.1);
 }
 
 h1 {
@@ -32,6 +38,9 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    margin-top: 5vw;
+}
 .displayResults {
     font-size: 2em;
     font-weight: 100;
@@ -43,6 +52,8 @@ h1 {
     outline: none;
     border: none;
     font-size: 1.5em;
+    margin-top: 2vw;
+    padding-left: 1.2vw;
 }
 
 .searchResults {
@@ -52,7 +63,6 @@ h1 {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.9);
     width: 60%;
-    padding: 5px 1px;
     border: none;
 }
 
@@ -80,11 +90,6 @@ a:hover {
     text-align: center;
 }
 
-.name {
-    font-size: 0.5em;
-    text-align: center;
-}
-
 /* display results  */
 
 .flexContainer {
@@ -94,13 +99,13 @@ a:hover {
     -webkit-align-items: center;
     align-items: center;
 }
-.flexed {
-}
 
 .flexed2 {
     display: flex;
     flex-direction: column;
     padding: 0;
+    line-height: 1.8;
+    font-size: 0.6em;
 }
 
 .dispCity {
@@ -113,10 +118,47 @@ a:hover {
     margin: 0;
 }
 
-.dispHumi {
-    font-size: 0.7em;
+@media screen and (max-width: 950px) {
+    .flexContainer {
+        flex-direction: column;
+    }
 }
 
-.dispWeatherText {
-    font-size: 0.7em;
+@media screen and (max-width: 450px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .dispTemp {
+        font-size: 2em;
+    }
+
+    .flexed2 {
+        font-size: 0.5em;
+    }
+
+    .cityNameSearch {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        margin-top: 10vw;
+    }
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .dispTemp {
+        font-size: 2em;
+    }
+
+    .flexed2 {
+        font-size: 0.5em;
+    }
+
+    .cityNameSearch {
+        font-size: 1em;
+    }
 }

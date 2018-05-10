@@ -3,9 +3,9 @@ var longitude;
 var coordinates;
 var weatherText;
 
-// window.onload = function() {
-//     geoFindMe();
-// };
+window.onload = function() {
+    geoFindMe();
+};
 
 //geoFindme is check for coordinates
 function geoFindMe() {
@@ -45,6 +45,7 @@ function init() {
         var windMiles;
         var windDir;
         var humidity;
+        var today;
 
         //wUnderground api function
         function getWeather() {
@@ -55,11 +56,13 @@ function init() {
                     locationName = parsed_json.location.city;
                     tempF = parsed_json.current_observation.temp_f.toFixed();
                     tempC = parsed_json.current_observation.temp_c.toFixed();
+                    today = new Date().toDateString();
                     humidity =
                         parsed_json.current_observation.relative_humidity;
                     weatherText = parsed_json.current_observation.weather;
                     $('#dispCity').text(locationName);
                     $('#dispTemp').text(tempF + '°');
+                    $('#date').text(today);
                     $('#dispHumi').text('Humidity ' + humidity);
                     $('#dispWeatherText').text(weatherText);
                     changeImage();
@@ -79,7 +82,7 @@ function init() {
                     $('#metric').text('Convert to Celcius');
                 } else {
                     $('#dispTemp').text(tempF + '°');
-                    $('#metric').text('Convert to Farenheit');
+                    $('#metric').text('Convert to Fahrenheit');
                 }
             });
         }
@@ -160,17 +163,17 @@ function searchCity() {
                                         .display_location.city;
                                 tempF = parsed_json.current_observation.temp_f.toFixed();
                                 tempC = parsed_json.current_observation.temp_c.toFixed();
+                                today = new Date().toDateString();
                                 humidity =
                                     parsed_json.current_observation
                                         .relative_humidity;
                                 weatherText =
                                     parsed_json.current_observation.weather;
                                 $('#dispCity').text(locationName);
-                                $('#dispTemp').text('Temp: ' + tempF + '° F');
-                                $('#dispHumi').text('Humidity: ' + humidity);
-                                $('#dispWeatherText').text(
-                                    'Current Condition: ' + weatherText
-                                );
+                                $('#dispTemp').text(tempF + '°');
+                                $('#date').text(today);
+                                $('#dispHumi').text('Humidity ' + humidity);
+                                $('#dispWeatherText').text(weatherText);
                                 changeImage();
                             }
                         });

@@ -18,16 +18,17 @@
   <div class="container centered .col-md-">
     <div class="jumbotron">
       <h1>Costa Weather</h1>
-      <h2 id="dispCity" class="dispCity">Katy</h2>
+      <h2 id="dispCity" class="dispCity">Checking Location...</h2>
       <div id="displayResults" class="displayResults">
 
         <div class="flexContainer">
           <div class="flexed">
-            <span id="dispTemp" class="dispTemp">84°</span>
+            <span id="dispTemp" class="dispTemp"></span>
           </div>
           <div class="flexed2">
-            <span id="dispHumi" class="dispHumi">Humidity 86%</span>
-            <span id="dispWeatherText" class="dispWeatherText">Partly Cloudy</span>
+            <span id="date" class="date"></span>
+            <span id="dispHumi" class="dispHumi"></span>
+            <span id="dispWeatherText" class="dispWeatherText"></span>
           </div>
         </div>
       </div>
@@ -35,20 +36,9 @@
         <button id="metric" type="button" class="btn btn-primary">Convert to Celsius</button>
       </div>
       <div class="ui-widget">
-        <input type="text" id="cityNameSearch" class="cityNameSearch" placeholder="Search for a new city" />
+        <input type="text" id="cityNameSearch" class="cityNameSearch" placeholder="Search new city" />
       </div>
       <div id="searchResults" class="searchResults">
-        <div>
-          <p>
-            <a href="#newCity" data-q_id="000AU.1.99999">Australia</a>
-          </p>
-          <p>
-            <a href="#newCity" data-q_id="000AU.1.99999">Australia</a>
-          </p>
-          <p>
-            <a href="#newCity" data-q_id="000AU.1.99999">Australia</a>
-          </p>
-        </div>
       </div>
 
     </div>
