@@ -1,3 +1,8 @@
+html {
+    background-size: cover;
+    height: 100%;
+}
+
 body {
     background: url('https://www.dropbox.com/s/4tjppcuqzsculsv/clearSky.jpg?raw=1')
         no-repeat center center fixed;
